@@ -5,3 +5,10 @@ Makefile
 CMakeFiles
 CMakeCache.txt
 *.cmake
+*.cmd
+*.d
+*.o
+*.ko
+*.order
+*.symvers
+*.mod
