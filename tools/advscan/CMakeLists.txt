@@ -4,4 +4,4 @@
 #
 # SPDX-License-Identifier: BSD-3-Clause
 #
-project(advfs-ng-advscan)
+project(advfs-tools-advscan)

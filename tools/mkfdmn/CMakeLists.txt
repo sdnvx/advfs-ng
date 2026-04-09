@@ -4,4 +4,4 @@
 #
 # SPDX-License-Identifier: BSD-3-Clause
 #
-project(advfs-ng-mkfdmn)
+project(advfs-tools-mkfdmn)

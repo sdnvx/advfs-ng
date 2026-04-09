@@ -6,7 +6,7 @@
 #
 cmake_minimum_required(VERSION 3.25)
 
-project(advfs-ng
+project(advfs
         VERSION 0.1.0
         DESCRIPTION "Cross-platform AdvFS for Linux/BSD"
         HOMEPAGE_URL https://github.com/sdnvx/advfs-ng
@@ -39,4 +39,5 @@ else()
     add_compile_definitions(NDEBUG)
 endif()
 
+add_subdirectory(module)
 add_subdirectory(tools)

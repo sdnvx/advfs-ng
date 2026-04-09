@@ -4,7 +4,7 @@
 #
 # SPDX-License-Identifier: BSD-3-Clause
 #
-project(advfs-ng-tools)
+project(advfs-tools)
 
 add_subdirectory(addvol)
 add_subdirectory(advscan)
@@ -19,6 +19,7 @@ add_subdirectory(migrate)
 add_subdirectory(mkfdmn)
 add_subdirectory(mkfset)
 add_subdirectory(mktrashcan)
+add_subdirectory(ncheck)
 add_subdirectory(renamefset)
 add_subdirectory(rmfdmn)
 add_subdirectory(rmfset)
