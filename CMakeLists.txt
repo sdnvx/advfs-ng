@@ -1,5 +1,5 @@
 #
-# AdvFS-NG: AdvFS for Linux
+# AdvFS-NG: Cross-platform AdvFS for Linux/BSD
 # Copyright (c) 2026, Dmitry Sednev <dmitry@sednev.ru>
 #
 # SPDX-License-Identifier: BSD-3-Clause
@@ -8,7 +8,7 @@ cmake_minimum_required(VERSION 3.25)
 
 project(advfs-ng
         VERSION 0.1.0
-        DESCRIPTION "AdvFS for Linux"
+        DESCRIPTION "Cross-platform AdvFS for Linux/BSD"
         HOMEPAGE_URL https://github.com/sdnvx/advfs-ng
         LANGUAGES C)
 

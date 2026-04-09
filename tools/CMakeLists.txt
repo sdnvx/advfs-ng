@@ -1,7 +1,42 @@
 #
-# AdvFS-NG: AdvFS for Linux
+# AdvFS-NG: Cross-platform AdvFS for Linux/BSD
 # Copyright (c) 2026, Dmitry Sednev <dmitry@sednev.ru>
 #
 # SPDX-License-Identifier: BSD-3-Clause
 #
 project(advfs-ng-tools)
+
+add_subdirectory(addvol)
+add_subdirectory(advscan)
+add_subdirectory(advstat)
+add_subdirectory(balance)
+add_subdirectory(chfile)
+add_subdirectory(chfsets)
+add_subdirectory(chvol)
+add_subdirectory(clonefset)
+add_subdirectory(defragment)
+add_subdirectory(migrate)
+add_subdirectory(mkfdmn)
+add_subdirectory(mkfset)
+add_subdirectory(mktrashcan)
+add_subdirectory(renamefset)
+add_subdirectory(rmfdmn)
+add_subdirectory(rmfset)
+add_subdirectory(rmvol)
+add_subdirectory(shblk)
+add_subdirectory(shfragbf)
+add_subdirectory(showfdmn)
+add_subdirectory(showfile)
+add_subdirectory(showfsets)
+add_subdirectory(stripe)
+add_subdirectory(switchlog)
+add_subdirectory(tag2name)
+add_subdirectory(vbmtchain)
+add_subdirectory(vbmtpg)
+add_subdirectory(vdump)
+add_subdirectory(verify)
+add_subdirectory(vfragpg)
+add_subdirectory(vlogpg)
+add_subdirectory(vlsnpg)
+add_subdirectory(vrestore)
+add_subdirectory(vtagpg)
