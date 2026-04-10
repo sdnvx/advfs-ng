@@ -4,4 +4,4 @@
 //
 // SPDX-License-Identifier: BSD-3-Clause
 //
-#include <advfs/fileset/command/rename.h>
+#include <advfs/domain/command/show.h>

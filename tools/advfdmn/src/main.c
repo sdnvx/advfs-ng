@@ -4,4 +4,9 @@
 //
 // SPDX-License-Identifier: BSD-3-Clause
 //
-#include <advfs/fileset/command/rename.h>
+#include <stdlib.h>
+
+int main(int argc, const char *argv[])
+{
+    return EXIT_SUCCESS;
+}

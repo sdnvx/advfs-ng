@@ -4,19 +4,20 @@
 #
 # SPDX-License-Identifier: BSD-3-Clause
 #
-project(advfs-tools-advfset)
+project(advfs-tools-advfdmn)
 
 include_directories(include)
 
-add_executable(advfset
+add_executable(advfdmn
     src/main.c
     src/command/list.c
     src/command/create.c
     src/command/show.c
-    src/command/rename.c
-    src/command/change.c
-    src/command/clone.c
-    src/command/dump.c
-    src/command/restore.c
+    src/command/addvol.c
+    src/command/chvol.c
+    src/command/rmvol.c
+    src/command/balance.c
+    src/command/stripe.c
+    src/command/switchlog.c
     src/command/remove.c
 )

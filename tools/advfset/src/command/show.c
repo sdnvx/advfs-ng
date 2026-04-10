@@ -4,4 +4,4 @@
 //
 // SPDX-License-Identifier: BSD-3-Clause
 //
-#include <advfs/fset/command/show.h>
+#include <advfs/fileset/command/show.h>
