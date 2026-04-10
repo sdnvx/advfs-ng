@@ -40,4 +40,5 @@ else()
 endif()
 
 add_subdirectory(module)
+add_subdirectory(libadvfs)
 add_subdirectory(tools)
