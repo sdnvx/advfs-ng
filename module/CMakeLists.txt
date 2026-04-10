@@ -16,24 +16,23 @@ execute_process(
 )
 
 if("${DISTRIB_ID}" STREQUAL "fedora")
-    find_path(
-        KERNEL_SOURCES
-        include/linux/user.h
-        PATHS /usr/src/kernels/${KERNEL_RELEASE}
-    )
+    set(KERNEL_HEADERS /usr/src/kernels/${KERNEL_RELEASE})
 else()
     message(FATAL_ERROR "Unsupported OS distribution: ${DISTRIB_NAME}")
 endif()
 
-if(NOT KERNEL_HEADERS)
-    message(FATAL_ERROR "Kernel headers not found")
-endif()
-
-message(STATUS "Distribution: ${DISTRIB_NAME}")
+message(STATUS "Distribution: ${DISTRIB_NAME} (${DISTRIB_ID})")
 message(STATUS "Kernel release: ${KERNEL_RELEASE}")
 message(STATUS "Kernel headers: ${KERNEL_HEADERS}")
 
-include_directories(${KERNEL_HEADERS}/include)
+if(NOT IS_DIRECTORY ${KERNEL_HEADERS})
+    message(FATAL_ERROR "Kernel headers not found")
+endif()
+
+include_directories(
+    ${KERNEL_HEADERS}/include
+    ${KERNEL_HEADERS}/tools/include
+)
 add_definitions(-D__KERNEL__ -DMODULE)
 
 set(MODULE_FILE advfs.ko)
@@ -49,6 +48,3 @@ add_custom_command(
     DEPENDS ${MODULE_SOURCES} VERBATIM)
 
 add_custom_target(module ALL DEPENDS ${MODULE_FILE})
-
-# Parse C files
-add_library(dummy_target ${MODULE_SOURCES})
